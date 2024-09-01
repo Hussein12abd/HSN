@@ -6,7 +6,7 @@ on:
     branches: [master]
 jobs:
   scan:
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull'
     uses: circlefin/circle-public-github-workflows/.github/workflows/pr-scan.yaml@v1
 
   release-sbom:
